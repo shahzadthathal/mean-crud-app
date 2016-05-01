@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="adminApp">
+<head>    
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<title>Web Shop Admin</title>
+
+<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- <link href="/js/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+ -->
+
+<link href="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+
+<link href="adminjs/theme/dist/css/sb-admin-2.css" rel="stylesheet">
+<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link rel='stylesheet' href='bower_components/textAngular/dist/textAngular.css'>
+
+<link rel='stylesheet' href='bower_components/angular-loading-bar/build/loading-bar.min.css' type='text/css' media='all' />
+<link rel="stylesheet" href="bower_components/angular-ui-notification/dist/angular-ui-notification.min.css">
+
+</head>
+<body>
+
+
+	<span us-spinner="{radius:30, width:8, length: 16}" spinner-key="spinner-1"></span>
+
+      <!-- Load all templates inside this ng-view -->
+      <div ng-view></div>     
+        
+
+
+</body>
+
+ <script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+ <script src="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+ <script src="bower_components/angular-datatables/dist/angular-datatables.min.js"></script> 
+ <script src="bower_components/spin.js/spin.js"></script>
+ <script src="bower_components/angular-spinner/angular-spinner.js"></script>
+
+<!-- https://github.com/chieffancypants/angular-loading-bar -->
+<script src='bower_components/angular-loading-bar/build/loading-bar.min.js'></script>
+
+
+<script src="bower_components/angular-ui-notification/dist/angular-ui-notification.min.js"></script>
+
+
+
+<!-- App -->
+<script src="adminjs/app.js"></script>
+
+<!--Controllers-->
+<script src="adminjs/controllers/login-controller.js"></script>
+<script src="adminjs/controllers/profile-controller.js"></script>
+<script src="adminjs/controllers/logout-controller.js"></script>
+<script src="adminjs/controllers/crud-controller.js"></script>
+
+
+<!-- Services-->
+<script src="adminjs/services/user-service.js"></script>
+<script src="adminjs/services/product-service.js"></script>
+
+<!-- Directives-->
+<script src="adminjs/directives/nav-bar-directive.js"></script>
+
+<!-- Interceptors-->
+<script src="adminjs/interceptors/auth-interceptor.js"></script>
+</html>
